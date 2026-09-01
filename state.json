@@ -1,0 +1,10 @@
+{
+  "heartbeat": "2026-W36",
+  "issues": {
+    "2000375": {
+      "description": "There is an issue with symbol info on CG1!, MGC1! and SI1!. It is under investigation. In the meantime, as a temporary workaround, please try to use contracts with expiration.",
+      "show_on_chart": false,
+      "title": "Issue with symbol info on CG1!, MGC1! and SI1! continuous futures."
+    }
+  }
+}

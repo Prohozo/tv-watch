@@ -1,0 +1,54 @@
+name: TradingView support watch
+
+on:
+  schedule:
+    # Every 15 minutes. GitHub's cron is best-effort and can lag under load;
+    # a missed slot just means the next run reports the change instead.
+    - cron: "*/15 * * * *"
+  workflow_dispatch: {}
+
+# Only one run at a time: two concurrent runs would both try to commit state.json.
+concurrency:
+  group: tv-watch
+  cancel-in-progress: false
+
+permissions:
+  contents: write   # commit state.json
+  issues: write     # open the notification issue
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - id: watch
+        run: python3 watch.py
+
+      - name: Open notification issue
+        if: steps.watch.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TITLE: ${{ steps.watch.outputs.title }}
+          BODY: ${{ steps.watch.outputs.body }}
+          # Mentioning the owner guarantees the notification email even if the
+          # repo's watch setting is ever turned down from "All activity".
+          MENTION: ${{ vars.NOTIFY_MENTION || github.repository_owner }}
+        run: |
+          printf '%s\n\ncc @%s\n' "$BODY" "$MENTION" > /tmp/issue.md
+          gh issue create --title "$TITLE" --body-file /tmp/issue.md --label tv-status \
+            || gh issue create --title "$TITLE" --body-file /tmp/issue.md
+
+      - name: Commit state
+        run: |
+          if git diff --quiet -- state.json; then
+            echo "state unchanged"
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add state.json
+          git commit -m "tv-watch: update state"
+          # The schedule can overlap with a manual push; rebase rather than fail.
+          git pull --rebase --autostash
+          git push
