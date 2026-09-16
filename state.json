@@ -1,4 +1,15 @@
 {
   "heartbeat": "2026-W38",
-  "issues": {}
+  "issues": {
+    "2000375": {
+      "description": "We are experiencing an issue with enabling real-time data on the CME tickers for the users who have just purchased the data packgate. We are investigating the issue with a high priority.",
+      "show_on_chart": false,
+      "title": "Issue with activation of the real-time for CME charts after purchasing data package."
+    },
+    "2000378": {
+      "description": "Some users can experience a login issue to CQG-powered brokers ( AVA Futures, Tradier, AMP, Plus500, Dorman, Stonex, EdgeClear, WHSelfinvest). CQG are investigating the problem.",
+      "show_on_chart": false,
+      "title": "Login issue to CQG-powered brokers."
+    }
+  }
 }
