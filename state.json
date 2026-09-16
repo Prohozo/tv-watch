@@ -1,10 +1,4 @@
 {
   "heartbeat": "2026-W38",
-  "issues": {
-    "2000378": {
-      "description": "Some users can experience a login issue to CQG-powered brokers ( AVA Futures, Tradier, AMP, Plus500, Dorman, Stonex, EdgeClear, WHSelfinvest). CQG are investigating the problem.",
-      "show_on_chart": false,
-      "title": "Login issue to CQG-powered brokers."
-    }
-  }
+  "issues": {}
 }
