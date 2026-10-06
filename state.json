@@ -1,4 +1,10 @@
 {
   "heartbeat": "2026-W41",
-  "issues": {}
+  "issues": {
+    "2000379": {
+      "description": "In accordance with the terms of our license, we are discontinuing access to S&P and DJ indices with the prefixes SPCFD, DJCFD and CBOE. The symbols are available from the official datafeeds - SP and DJ — it is now necessary to acquire the appropriate real-time data subscription.",
+      "show_on_chart": false,
+      "title": "S&P and DJ indices official datafeed"
+    }
+  }
 }
