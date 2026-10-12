@@ -5,6 +5,11 @@
       "description": "In accordance with the terms of our license, we are discontinuing access to S&P and DJ indices with the prefixes SPCFD, DJCFD and CBOE. The symbols are available from the official datafeeds - SP and DJ — it is now necessary to acquire the appropriate real-time data subscription.",
       "show_on_chart": false,
       "title": "S&P and DJ indices official datafeed"
+    },
+    "2000380": {
+      "description": "CSE Canada real-time data is going to be available only with a paid subscription in accordance with our new license — starting tomorrow. Delayed data will be available for all.",
+      "show_on_chart": false,
+      "title": "Access to CSE Canada real-time data"
     }
   }
 }
