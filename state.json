@@ -5,11 +5,6 @@
       "description": "In accordance with the terms of our license, we are discontinuing access to S&P and DJ indices with the prefixes SPCFD, DJCFD and CBOE. The symbols are available from the official datafeeds - SP and DJ — it is now necessary to acquire the appropriate real-time data subscription.",
       "show_on_chart": false,
       "title": "S&P and DJ indices official datafeed"
-    },
-    "2000381": {
-      "description": "We are experiencing a problem with showing pending orders on Binance perpetual futures. The integration is under maintenance till the issue is resolved. In the meantime, please use a broker platform to manage the orders.",
-      "show_on_chart": false,
-      "title": "Issues with displaying pending orders on Binance derivative accounts."
     }
   }
 }
