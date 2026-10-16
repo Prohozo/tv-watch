@@ -10,6 +10,11 @@
       "description": "We are experiencing a problem with showing pending orders on Binance perpetual futures. The integration is under maintenance till the issue is resolved. In the meantime, please use a broker platform to manage the orders.",
       "show_on_chart": false,
       "title": "Issues with displaying pending orders on Binance derivative accounts."
+    },
+    "2000383": {
+      "description": "Currently, the daily candle for 15.10 on some stocks is missing. Our team is investigating the case.",
+      "show_on_chart": false,
+      "title": "Some stocks are missing a daily candle on 15.10"
     }
   }
 }
