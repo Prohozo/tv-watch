@@ -1,10 +1,4 @@
 {
   "heartbeat": "2026-W43",
-  "issues": {
-    "2000384": {
-      "description": "Due to the outage on the FTMO's end, there is a login issue to Oanda accounts and no real-time data on Oanda_FTMO charts. The work on the fix is in progress.",
-      "show_on_chart": false,
-      "title": "Oanda FTMO issue"
-    }
-  }
+  "issues": {}
 }
