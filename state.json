@@ -1,10 +1,4 @@
 {
   "heartbeat": "2026-W43",
-  "issues": {
-    "2000385": {
-      "description": "BOATS halted trading activity due to the intermittent network connectivity issues. As a result, there are no updates during the 24-hour session on US stocks.",
-      "show_on_chart": false,
-      "title": "No real-time data during Overnight session on US stocks."
-    }
-  }
+  "issues": {}
 }
