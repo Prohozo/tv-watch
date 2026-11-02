@@ -1,4 +1,10 @@
 {
-  "heartbeat": "2026-W44",
-  "issues": {}
+  "heartbeat": "2026-W45",
+  "issues": {
+    "2000386": {
+      "description": "Users may experience authorization issue on Eightcap accounts.The problem is under investigation.",
+      "show_on_chart": false,
+      "title": "Login issue on Eightcap accounts."
+    }
+  }
 }
