@@ -1,4 +1,10 @@
 {
   "heartbeat": "2026-W45",
-  "issues": {}
+  "issues": {
+    "2000387": {
+      "description": "Please, disable SET setting on the lower rigth corner for the daily intervals and higher. Intraday charts are unaffected. The issue is under investigation.",
+      "show_on_chart": false,
+      "title": "Issue with MCX settle price updates on the daily charts and watchlist."
+    }
+  }
 }
