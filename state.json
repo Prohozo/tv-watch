@@ -1,10 +1,4 @@
 {
   "heartbeat": "2026-W46",
-  "issues": {
-    "2000388": {
-      "description": "Effective November 5, 2026, updates for selected ECONOMICS symbols have been discontinued. Historical data up to November 5 remains available on charts and tables. Real-time updates have been discontinued, and existing alerts on these symbols will no longer trigger.",
-      "show_on_chart": false,
-      "title": "Notice of service termination"
-    }
-  }
+  "issues": {}
 }
